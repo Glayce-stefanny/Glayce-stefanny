@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creme Ideal para Cabelos Cacheados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cremes para Cabelos Cacheados</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#tipos">Tipos de Cremes</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#ajuda">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Tipos de Cremes -->
+        <section id="tipos" class="tipos">
+            <h2>Tipos de Cremes</h2>
+            <div class="cremes">
+                <div class="creme" data-tipo="Nutrição">
+                    <h3>Creme de Nutrição</h3>
+                    <p>Indicado para cabelos ressecados, ajuda a repor óleos naturais.</p>
+                    <button class="detalhes-btn">Detalhes</button>
+                </div>
+                <div class="creme" data-tipo="Hidratação">
+                    <h3>Creme de Hidratação</h3>
+                    <p>Perfeito para restaurar a umidade dos fios e eliminar o frizz.</p>
+                    <button class="detalhes-btn">Detalhes</button>
+                </div>
+                <div class="creme" data-tipo="Reconstrução">
+                    <h3>Creme de Reconstrução</h3>
+                    <p>Ideal para cabelos danificados, repara a estrutura dos fios.</p>
+                    <button class="detalhes-btn">Detalhes</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dicas -->
+        <section id="dicas" class="dicas">
+            <h2>Dicas para Escolher o Creme Certo</h2>
+            <ul>
+                <li>Conheça o seu tipo de cacho (2A, 3B, 4C, etc.).</li>
+                <li>Identifique a necessidade do seu cabelo: hidratação, nutrição ou reconstrução.</li>
+                <li>Leia os rótulos para verificar ingredientes adequados para seu cabelo.</li>
+                <li>Teste diferentes produtos até encontrar o que funciona melhor para você.</li>
+            </ul>
+        </section>
+
+        <!-- Ajuda -->
+        <section id="ajuda" class="ajuda">
+            <h2>Precisa de Ajuda?</h2>
+            <form id="form-ajuda">
+                <label for="tipo-cacho">Qual é o seu tipo de cacho?</label>
+                <select id="tipo-cacho" name="tipo-cacho" required>
+                    <option value="2">2 - Ondulado</option>
+                    <option value="3">3 - Cacheado</option>
+                    <option value="4">4 - Crespo</option>
+                </select>
+                <label for="problema-cabelo">O que seu cabelo precisa?</label>
+                <select id="problema-cabelo" name="problema-cabelo" required>
+                    <option value="hidratação">Hidratação</option>
+                    <option value="nutrição">Nutrição</option>
+                    <option value="reconstrução">Reconstrução</option>
+                </select>
+                <button type="submit">Encontrar Creme Ideal</button>
+            </form>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cabelos Cacheados. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
